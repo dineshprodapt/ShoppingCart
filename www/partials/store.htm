@@ -1,7 +1,7 @@
 ﻿<table class="table table-bordered">
     <tr class="well">
         <td class="tdRight" colspan="4" >
-            <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+            <a href="index.html#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                 <i class="icon-shopping-cart" />
                 <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
             </a>
@@ -11,7 +11,6 @@
         <td class="tdCenter"><img ng-src="img/products/{{product.sku}}.jpg" alt="{{product.name}}" /></td>
         <td>
             <a href="#/products/{{product.sku}}"><b>{{product.name}}</b></a><br />
-            {{product.description}}
         </td>
         <td class="tdRight">
             {{product.price | currency}}
@@ -24,7 +23,7 @@
     </tr>
     <tr class="well">
         <td class="tdRight" colspan="4">
-            <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+            <a href="index.html#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                 <i class="icon-shopping-cart" />
                 <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
             </a>
